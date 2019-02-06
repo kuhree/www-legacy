@@ -1,0 +1,296 @@
+/*Global Styles ---------------*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+body {
+    background-color: #fffffa;
+} 
+
+p {
+    color: #333138;
+}
+
+/*Header Styles ---------------
+-------------------------------
+*/
+
+#banner {
+    height: 100vh;
+    background-image: url("../img/background.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    max-height: 75%;
+    max-width: 75%;
+    position: relative;
+    bottom: 75px;
+    right: 20px;
+}
+
+h1 {
+    color: #fffffa;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+    bottom: 75px;
+}
+
+.tagline {
+    text-align: left;
+    color: #fffffa;
+    font-size: 1.3rem;
+    padding: 5% 50px;
+    line-height: 1.5;
+    position: relative;
+    bottom: 30px;
+}
+
+.arrow-container{
+    justify-self: flex-end;
+    margin-top: auto;
+}
+.arrow {
+    max-height: 15%;
+    max-width: 15%;
+    transform: rotate(90deg);
+    margin-top: auto;
+    align-self: center;
+    margin-bottom: 5px;
+}
+/*Main Styles -----------------
+-------------------------------
+*/
+
+
+
+/*What We Do ------------------*/
+#home {
+    margin-top: 75px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3,
+legend {
+    text-align: center;
+    color: #333138;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.offers{
+    text-align: center;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.offers .title {
+    font-size: 1.3rem;
+    color: #F33535;
+}
+
+.offers .description {
+    padding: 0 5%;
+}
+
+
+.offers img,
+#testimonials img {
+    max-height: 50%;
+    max-width: 50%;
+    order: -1;
+    padding: 2%; 
+}
+
+/*Testimonial Styles ---------------*/
+#testimonials {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(#fffffa 55%, #FF4351 100%);
+}
+
+#testimonials .look {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffffa;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 20px -5px #F33535;
+    border-radius: 3rem;
+    margin: 15px 5%;
+    padding-top: 15px;
+}
+
+.testimonial .name {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #F33535;
+}
+
+.testimonial blockquote {
+    text-align: center;
+    padding: 5%;
+    line-height: 1.5;
+    color: #515052;
+    letter-spacing: 1.5px;
+}
+
+
+/*Pricing Styles -----------------*/
+#pricing {
+    height: auto + 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#starter,
+#intermediate,
+#advanced {
+    background-color: #fffffa;
+    border-radius: 3rem;
+    padding: 30px;
+}
+
+#pricing p {
+    font-size: 3rem;
+    color: #F33535;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* #pricing h3 {
+    font-size: 4rem;
+} */
+
+#pricing ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: circle;
+}
+
+#pricing li {
+    padding: 20px 10px 5px;
+    align-self: center;
+    border-bottom: 3px dotted #515052;
+    color: #515052;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#intermediate {
+    display: none;
+}
+
+#advanced {
+    display: none;
+}
+
+/*Contact Styles -----------------*/
+
+#contact{
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-form {
+    height: inherit;
+    display: flex;
+    border-radius: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+
+#contact-form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+legend {
+    margin: 30px auto;
+}
+
+label {
+    color: #fffffa;
+    font-size: 2rem;
+    text-shadow: 0px 0px 5px #F33535;
+}
+
+.input {
+    width: 75%;
+    margin: 0 30% 10%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #fffffa;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#contact-form textarea {
+    margin: 20px auto;
+    height: 10%;
+    width: 75%;
+    border-radius: 1rem;
+    background-color: #fffffa;
+    border: 1px solid #000103;
+    color: #F33535;
+    text-align: center;
+}
+
+#contact-form #packages {
+    width: 50%;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: #F33535;
+    background-color: #fffffa;
+    border: none;
+    margin-bottom: 10%;
+}
+
+#contact-form button {
+    width: 30%;
+    border-radius: 3rem;
+    background-color: #fffffa;
+    color: #F33535;
+    border: 1px solid #000103;
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+/*Media Queries ------------------*/

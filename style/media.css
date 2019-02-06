@@ -1,0 +1,156 @@
+@media(min-width: 767px) {
+    #logo {
+        bottom: 200px;
+        right: 30px;
+    }
+
+    h3,
+    legend {
+        font-size: 4.5rem;
+    }
+
+    .offers {
+        margin: auto 100px;
+    }
+    
+    .testimonial{
+        margin: 30px 100px;
+    }
+
+    #testimonials .look {
+        font-size: 2rem;
+    }
+
+    #starter,
+    #intermediate,
+    #advanced {
+        padding: 100px;
+    }
+
+    #pricing p,
+    legend {
+        font-size: 5rem;
+    }
+
+    #pricing li,
+    label {
+        font-size: 3rem;
+    }
+}
+
+@media(min-width: 1279px) {
+    * {border: 1px solid red;}
+
+    #logo {
+        max-height: 545%;
+        max-width: 45%;
+        bottom: 200px;
+    }
+
+    h1{
+        bottom: 300px;
+        font-size: 5rem;
+    }
+
+    .tagline {
+        bottom: 250px;
+        font-size: 2rem;
+    }
+
+    h3,
+    legend {
+        font-size: 5rem;
+    }
+
+    .offers .title {
+        font-size: 3.3rem;
+    }
+
+    .offers {
+        margin: auto 100px;
+        font-size: 2.5rem;
+    }
+    
+    .testimonial{
+        margin: 30px 100px;
+    }
+
+    #testimonials .look {
+        font-size: 2.3rem;
+    }
+
+    .testimonial .name {
+        font-size: 3rem;
+    }
+
+    .testimonial blockquote {
+        font-size: 2rem;
+    }
+
+    #pricing{
+        padding-top: 100px;
+        height: auto;
+    }
+    #pricing h3 {
+        font-size: 6rem;
+    }
+
+    #starter,
+    #intermediate,
+    #advanced {
+        padding: 10% 15% 10%;
+    }
+
+    #pricing p,
+    legend {
+        font-size: 7rem;
+        margin-bottom: 75px;
+    }
+
+    #pricing li,
+    label {
+        margin-bottom: 50px;
+        font-size: 5rem;
+    }
+
+    #contact {
+        height: auto;
+    }
+
+    #contact-form fieldset {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-basis: 150px;
+    }
+
+    fieldset label {
+        font-size: 3rem;
+        margin: 30px 2%;
+    }
+
+    .input {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #contact-form #packages {
+        font-size: 3rem;
+        width: 30%;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    #contact-form textarea {
+        height: 200px;
+        width: 50%;
+        margin-top: 0;
+    }
+
+    #contact-form button {
+        width: 20%;
+        height: 20%;
+        font-size: 3rem;
+    }
+
+}
