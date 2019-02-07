@@ -2,6 +2,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 3px;
+    box-sizing: border-box;
 }
 
 body {
@@ -83,7 +84,7 @@ legend {
     color: #333138;
     font-weight: 600;
     font-size: 2rem;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 25px;
 }
 
@@ -115,8 +116,12 @@ legend {
 }
 
 /*Testimonial Styles ---------------*/
-#testimonials {
+.belief {
     margin-top: 75px;
+}
+
+#testimonials {
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +129,7 @@ legend {
     background: linear-gradient(#fffffa 55%, #FF4351 100%);
 }
 
-#testimonials .look {
+.look {
     text-align: center;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -169,6 +174,7 @@ legend {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 #starter,
@@ -264,7 +270,7 @@ label {
 
 #contact-form textarea {
     margin: 20px auto;
-    height: 10%;
+    height: 100%;
     width: 75%;
     border-radius: 1rem;
     background-color: #fffffa;

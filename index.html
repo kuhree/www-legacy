@@ -24,9 +24,8 @@
     </header>
 
     <main>
-        <div id="home">
-            <h3 class="questions">What We Offer</h3>
-
+        <h3 class="questions">What We Offer</h3>
+        <div id="offer">
             <div class='offers'>
                 <p class='title'>Better Customer Experience</p>
                 <p class='description'>Our websties are designed with the customer in mind first. 
@@ -52,10 +51,9 @@
             </div>
         </div>
 
+        <h3 class="belief">Don't Believe Us?</h3>
+        <p class="look">Here's a few words from others about working with us...</p>
         <div id="testimonials">
-            <h3 class="belief">Don't Believe Us?</h3>
-            <p class="look">Here's a few words from others about working with us...</p>
-
             <div class='testimonial'>
                 <p class='name'>Jason Scott</p>
                 <blockquote cite ="GVTalent.com">
@@ -88,9 +86,9 @@
             </div>
         </div>
 
+            
             <div id="pricing">
                 <h3>Packages</h3>
-                
                 <div id="starter">
                     <p>Starter</p>
                     <ul class='packs'>
@@ -132,26 +130,29 @@
             </div>
 
             <div id="contact">
+                    <h3 class='contact-info'>Get In Touch</h3>
                 <form id='contact-form'>
                     <fieldset>
-                        <legend class='contact-info'>Contact Us</legend>
                         <label for='name'>Name</label>
                         <input id ='name' class="input" type='text' name='name'>
                         <label for='email'>Email</label>
                         <input id='email' class="input" type='text' name='email'>
                         <label for='phone'>Phone</label>
                         <input id='phone' class="input" type='text' name='phone'>
-                        
                     </fieldset>
-                    <label for='packages'>Select Package</label>
-                    <select id='packages' name='packages' required>
-                        <option value='starter'>Starter</option>
-                        <option value='advanced'>Intermediate</option>
-                        <option value='advanced'>Advanced</option>
-                        <option value='custom'>Custom</option>
-                    </select>
-                    <label for='message'>Message:</label>
-                    <textarea id='message' name='message'></textarea>
+                    
+                    <fieldset>
+                        <label for='packages'>Select Package</label>
+                        <select id='packages' name='packages' required>
+                            <option value='starter'>Starter</option>
+                            <option value='advanced'>Intermediate</option>
+                            <option value='advanced'>Advanced</option>
+                            <option value='custom'>Custom</option>
+                        </select>
+
+                        <label for='message'>Message:</label>
+                        <textarea id='message' name='message'></textarea>
+                    </fieldset>
                     <button type='submit' value='submit'>Submit</button>
                 </form>
 

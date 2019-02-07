@@ -39,22 +39,34 @@
 }
 
 @media(min-width: 1279px) {
-    * {border: 1px solid red;}
 
     #logo {
-        max-height: 545%;
+        max-height: 55%;
         max-width: 45%;
-        bottom: 200px;
+        bottom: 125px;
+    }
+
+    #banner .arrow{
+        height: 100%;
+        width: 100%;
     }
 
     h1{
-        bottom: 300px;
         font-size: 5rem;
     }
 
     .tagline {
-        bottom: 250px;
         font-size: 2rem;
+    }
+    
+    #banner .arrow {
+        max-height: 10%;
+        max-width: 10%;
+        transition: ease-in-out .5s;
+    }
+
+    #banner .arrow:hover{
+        transform: rotate(450deg) scale(1.2);
     }
 
     h3,
@@ -62,17 +74,40 @@
         font-size: 5rem;
     }
 
+    .questions {
+        margin-top: 100px;
+    }
+
     .offers .title {
-        font-size: 3.3rem;
+        font-size: 1.7rem;
+    }
+
+    #offer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .offers {
-        margin: auto 100px;
-        font-size: 2.5rem;
+        margin: auto 25px;
+        font-size: 1.4rem;
+        width: 29%;
+    }
+
+    #testimonials {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .look {
+        text-align: center;
+        font-size: 2.4rem;
     }
     
     .testimonial{
-        margin: 30px 100px;
+        margin: 30px 29px;
+        width: 29%;
     }
 
     #testimonials .look {
@@ -80,48 +115,63 @@
     }
 
     .testimonial .name {
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
 
     .testimonial blockquote {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     #pricing{
         padding-top: 100px;
         height: auto;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
     #pricing h3 {
         font-size: 6rem;
+        flex-basis: 100%;
     }
 
     #starter,
     #intermediate,
     #advanced {
-        padding: 10% 15% 10%;
+        display: inline-block;
+        width: 29%;
+        padding: 15px;
+        margin: 5px;
     }
 
     #pricing p,
     legend {
-        font-size: 7rem;
+        font-size: 3rem;
         margin-bottom: 75px;
     }
 
     #pricing li,
     label {
         margin-bottom: 50px;
-        font-size: 5rem;
+        font-size: 2rem;
     }
 
     #contact {
         height: auto;
+        padding-top: 100px;
     }
 
-    #contact-form fieldset {
+    #contact-form {
+        padding-top: 0;
+    }
+
+    #contact-form {
+        display: inline-flex;
         flex-direction: row;
-        justify-content: flex-start;
         flex-wrap: wrap;
-        flex-basis: 150px;
+        width: 100%;
+        justify-content: space-around;
     }
 
     fieldset label {
@@ -135,22 +185,29 @@
     }
     
     #contact-form #packages {
-        font-size: 3rem;
-        width: 30%;
+        font-size: 2rem;
+        width: 100%;
         margin-top: 0;
         margin-bottom: 40px;
     }
 
     #contact-form textarea {
-        height: 200px;
-        width: 50%;
+        height: 100px;
+        width: 100%;
         margin-top: 0;
     }
 
     #contact-form button {
-        width: 20%;
         height: 20%;
-        font-size: 3rem;
+        font-size: 2rem;
+        flex-basis: 25%;
+        margin: 5% 30%;
     }
 
+}
+
+@media(min-width: 1919px) {
+    #logo {
+        bottom: 150px;
+    }
 }
