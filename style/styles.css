@@ -12,13 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 
-a {
+a{
     color: red;
 }
 
 /*NavBar Styles ---------------------*/
-nav .nav-link {
-    font-size: 1.7vw;
+.nav-link {
+    font-size: 5vw;
 }
 nav .container {
     background-color: transparent;
@@ -94,9 +94,31 @@ nav .container {
 ****************************/
 
 /*Services Styles ----------*/
-    .warning {
-        color: red;
-    }
+.warning {
+    color: red;
+}
+
+/*Package Styles -------------*/
+
+.packages .card-header {
+    font-size: 2.7em;
+}
+
+.card {
+    margin-top: 10%;
+}
+
+.packages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.packages .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
 
 
 
@@ -122,14 +144,70 @@ nav .container {
 /*Media Queries ------------*/
 
 @media only screen and (max-width: 991px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+    .packages .card-header {
+        font-size: 16px;
+    }
+
+    .nav-link  a{
+        font-size: 100vw;
+    }
+
     #offers .card,
     #testimonials .card {
         margin-top: 10%;
     }
-}
+  }
 
-@media only screen and (max-width: 768px) {
-    .nav-item a {
-        font-size: 5vw;
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {  
+    .packages .card-header {
+        font-size: 30px;
     }
-}
+
+    .nav-item a {
+        font-size: 1.7vw;
+    }
+
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .packages .card-header {
+        font-size: 40px;
+    }
+
+    #offers .card,
+    #testimonials .card {
+        margin-top: 0;
+    }
+
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+    .packages .card-header {
+        font-size: 48px;
+    }
+
+  }
+
+  /*
