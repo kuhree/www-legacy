@@ -5,163 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GV Web Design</title>
-    <link href="style/reset.css" rel="stylesheet">
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/media.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700i" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-    
-
-    <header>
-        <div id="banner">
-            <img id="logo" src="img/logo_transparent.png">
-            <h1 class="typewriter header">Let's Build Your Vision Together</h1>
-            <p class="tagline">Your vision is our mission.</p>
-            <img class="arrow" src="img/next-page.svg">
-        </div>
-
-        
+   <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="https://kjwebdev.github.io">
+                    <img class="d-inline-block align-top" src="img/logo_transparent.png" alt="GV Web Design"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-        <h3 class="questions">What We Offer</h3>
-        <div id="offer">
-            <div class='offers'>
-                <p class='title'>Better Customer Experience</p>
-                <p class='description'>Our websties are designed with the customer in mind first. 
-                    When they visit your new site, it will become a lasting memorable experience.
-                </p>
-                <img src='img/customer.svg' alt="A better customer experience becomes a mnemorable event" title="customer experience">
-            </div>
-
-            <div class='offers'>
-                <p class='title'>Greater Online Exposure</p>
-                <p class='description'>When developing our websites, we use an authentic approach to SEO and design 
-                    guaranteed to bring you more attention and in turn more customers.
-                </p>
-                <img src='img/network.svg' alt="A better website means a greater online presence allowing you to be found" title="online presence">
-            </div>
-
-            <div class='offers'>
-                <p class='title'>Increased Sales</p>
-                <p class='description'>A memorable appearance and a greater online presence both bring you more customers.
-                    This, in turn, bring you more sales and more dollars in your pocket.
-                </p>
-                <img src='img/sales.svg' alt="better customer experience becomes a mnemorable event" title="customer experience">
+        <!-- Jumbotron -->
+        <div id="header" class="jumbotron mb-0 vertical-center">
+            <div class="container text-center">
+                <h1 class="display-4 mb-3">Let's Build Your Vision Together</h1>
+                <p class="lead">Every business has a vision. It's our job to bring that to the web.</p>
+                <hr class="my-4">
+                <p>Fast and Affordable Websites for Your Business</p>
+                <div class="lead">
+                    <a class="btn" href="#header" role="button"><img id="continue" src="img/next-page.svg" alt="continue"></a>
+                </div>
             </div>
         </div>
+        <!-- /Jumbotron -->
+        <div class="bg">
+            <div class="container">
+                <!-- What you Get -->
+                <div class="text-center pt-5">
+                    <h2 class="display-4">What You Get</h2>
+                    <p class="lead">With Our fast and affordable website's you'll recieve the following...</p>
+                    <div id="offers" class="row">
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top" src="img/customer.svg" alt="Better Customer Experience">
+                            <div class="card-body">
+                                <h5 class="card-title">Better Customer Experience</h5>
+                                <p class="card-text">Our websties are designed with the customer in mind first. When they visit your new site, it will become a lasting memorable experience.</p>
+                            </div>
+                        </div>
 
-        <h3 class="belief">Don't Believe Us?</h3>
-        <p class="look">Here's a few words from others about working with us...</p>
-        <div id="testimonials">
-            <div class='testimonial'>
-                <p class='name'>Jason Scott</p>
-                <blockquote cite ="GVTalent.com">
-                    "KJ helped me out by increasing my sales and visitor retention rates. 
-                    The results were outstanding because I had been trying everything I could find while researching SEOs. 
-                    One thing I liked the most was his attention to details, even on the small things. 
-                    The whole experience was amazing and I would definitely recommend Khari to anyone who needs a site done right."
-                </blockquote>
-                <img src='img/customer.svg' alt="Jason Scott, Owner and CEO of GV Talent" title="customer experience">
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top" src="img/network.svg" alt="Greater Online Presence">
+                            <div class="card-body">
+                                <h5 class="card-title">Greater Online Presence</h5>
+                                <p class="card-text">When developing our websites, we use an authentic approach to SEO and design guaranteed to bring you more attention and in turn more customers</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top" src="img/sales.svg" alt="Increased Sales">
+                            <div class="card-body">
+                                <h5 class="card-title">Increased Sales</h5>
+                                <p class="card-text">A memorable appearance and a greater online presence both bring you more customers. This, in turn, bring you more sales and more dollars in your pocket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- What You Get -->
+                <hr class="my-5">
+                <!-- Testimonials -->
+                <div class="text-center">
+                    <h2 class="display-4">Don't Believe Us?</h2>
+                    <p class="lead">Here's a few Words From Our Clients...</p>
+                    <div id="testimonials" class="row mt-5">
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top rounded-circle" src="img/customer.svg" alt="Better Customer Experience">
+                            <div class="card-body ">
+                                <h5 class="card-title">Jason Scott</h5>
+                                <p class="card-text ">"KJ helped me out by increasing my sales and visitor retention rates. The results were outstanding because I had been trying everything I could find while researching SEOs. 
+                                    One thing I liked the most was his attention to details, even on the small things. The whole experience was amazing and I would definitely recommend Khari to anyone who needs a site done right."</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top rounded-circle" src="img/network.svg" alt="Greater Online Presence">
+                            <div class="card-body">
+                                <h5 class="card-title">Chalise Evans</h5>
+                                <p class="card-text">"KJ helped me out by revamping my website for me. The result was amazing! They came up with some fresh ideas that really made my website pop. One thing I liked the most was that KJ asked me what is was that I wanted exactly and was willing to work with my needs. The whole experience was awesome, I love working with people who want to help other artists reach their goals. I would recommend Khari to anyone who needs a website made!"</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg card mx-3">
+                            <img class="card-img-top rounded-circle" src="img/sales.svg" alt="Increased Sales">
+                            <div class="card-body">
+                                <h5 class="card-title">Talisa Caldwell</h5>
+                                <p class="card-text">"KJ helped me out by revamping my website for me. The result was amazing! They came up with some fresh ideas that really made my website pop. 
+                                    One thing I liked the most was that KJ asked me what is was that I wanted exactly and was willing to work with my needs. The whole experience was awesome, I love working with people who want to help other artists reach their goals. 
+                                    I would recommend Khari to anyone who needs a website made!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+                <!-- /Testimonials -->
+                <hr class="my-5">
+                <!-- Get Plans -->
+                <div class="jumbotron jumbotron-fluid py-3">
+                    <div class="container">
+                        <p class="display-4">Get Your Vision Built Today</p>
+                        <button type="button" class="btn btn-secondary btn-lg">See Packages</button>
+                    </div>
+                </div>
+                <!-- /Get plans -->
+                <hr class="my-5">
+            <div class="container">
+                <!-- Our Work -->
+                <div class="mt-5 text-center">
+                    <h2 class="display-4">See Our Work</h2>
+                    <p class="lead">We Take Pride In Our Work. See Below...</p>
+                    <div class="card my-5">
+                        <img class="card-img-top img-fluid" src="img/taslisamusic.png" alt="TalisaMusic.com">
+                        <div class="card-body">
+                            <a href="https://talismusic.com"><h5 class="card-title">TalisaMusic.com</h5></a>
+                            <p class="card-text">Talisa is an artist here in Colroado Springs. She is known for her deeply passionate music that is  filled with authentic raw emotion.</p>
+                            <p class="card-text"><small class="text-muted">Live Site</small></p>
+                        </div>
+                    </div>
 
-            <div class='testimonial'>
-                <p class='name'>Chalise Evans</p>
-                <blockquote cite ="">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                    aliquip ex ea commodo consequat."
-                </blockquote>
-                <img src='img/customer.svg' alt="Jason Scott, Owner and CEO of GV Talent" title="customer experience">
-            </div>
-
-            <div class='testimonial'>
-                <p class='name'>Talisa Caldwell</p>
-                <blockquote cite ="">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                        aliquip ex ea commodo consequat."
-                </blockquote>
-                <img src='img/customer.svg' alt="" title="customer experience">
+                    <div class="card my-5">
+                        <img class="card-img-top img-fluid" src="img/wallace.png" alt="TalisaMusic.com">
+                        <div class="card-body">
+                            <h5 class="card-title">Wallace Construction Company</h5>
+                            <p class="card-text">Wallace Construction Company is a mockup for a construction company looking to grow their business in Colorado Springs.</p>
+                            <p class="card-text"><small class="text-muted">Mockup Example</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Our Work -->
             </div>
         </div>
-
-            
-            <div id="pricing">
-                <h3>Packages</h3>
-                <div id="starter">
-                    <p>Starter</p>
-                    <ul class='packs'>
-                        <li>No Hidden Fees</li>
-                        <li>Tailored Design</li>
-                        <li>Up to 5 pages</li>
-                        <li>Mobile Friendly</li>
-                        <li>Contact Forms</li>
-                        <li>7 Day Support</li>
-                        <li>1-Month of <BR> Website Analytics</li>
-                    </ul>
-                </div>
-
-                <div id="intermediate">
-                    <p>Intermediate</p>
-                    <ul class='packs'>
-                        <li>Starter +</li>
-                        <li>SEO Stup</li>
-                        <li>SSL Certificate</li>
-                        <li>3 Pop-Up</li>
-                        <li>Up to 10 pages</li>
-                        <li>Booking Form</li>
-                        <li>1-Month Support</li>
-                        <li>3-Months of <BR> Website Analytics</li>
-                    </ul>
-                </div>
-
-                <div id="advanced">
-                    <p>Advanced</p>
-                    <ul class='packs'>
-                        <li>Starter +</li>
-                        <li>Intermediate +</li>
-                        <li>E-commerse Capabilities</li>
-                        <li>Unlimited Pages</li>
-                        <li>6-Month Support</li>
-                        <li>1 Year of <BR> Website Analytics</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="contact">
-                    <h3 class='contact-info'>Get In Touch</h3>
-                <form id='contact-form'>
-                    <fieldset>
-                        <label for='name'>Name</label>
-                        <input id ='name' class="input" type='text' name='name'>
-                        <label for='email'>Email</label>
-                        <input id='email' class="input" type='text' name='email'>
-                        <label for='phone'>Phone</label>
-                        <input id='phone' class="input" type='text' name='phone'>
-                    </fieldset>
-                    
-                    <fieldset>
-                        <label for='packages'>Select Package</label>
-                        <select id='packages' name='packages' required>
-                            <option value='starter'>Starter</option>
-                            <option value='advanced'>Intermediate</option>
-                            <option value='advanced'>Advanced</option>
-                            <option value='custom'>Custom</option>
-                        </select>
-
-                        <label for='message'>Message:</label>
-                        <textarea id='message' name='message'></textarea>
-                    </fieldset>
-                    <button type='submit' value='submit'>Submit</button>
-                </form>
-
-            </div>
     </main>
 
     <footer>
-
+        
     </footer>
-    <script src="js/script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body>
 </html>

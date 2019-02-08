@@ -1,0 +1,80 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.vertical-center {
+    min-height: 90vh;
+    align-items: center;
+    display: flex;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*NavBar Styles ---------------------*/
+nav .nav-link {
+    font-size: 1.7vw;
+}
+nav .container {
+    background-color: transparent;
+}
+
+#continue{
+    max-height: 15%;
+    max-width: 15%;
+    background-color: transparent;
+    transform: rotate(90deg);
+    transition: .5s ease-in-out;
+}
+
+#continue:hover {
+    transform: rotate(450deg) scale(1.2);
+}
+
+
+/*Jumbotron Styles ---------------------*/
+#header {
+    background-image:   linear-gradient(#ccc -10%, rgba(255, 67, 81, .3) 75%),
+                        url(../img/banner.jpg);
+    background-size: cover;
+}
+
+
+#header .container div:last-child {
+    position: relative;
+    bottom: -100px;
+}
+
+/*Background ---------------------*/
+.bg{
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/*Card Styles ---------------------*/
+#offers .card,
+#testimonials .card    {
+    border-radius: 10%;
+}
+
+#offers div:nth-of-type(1n),
+#testimonials div:nth-of-type(1n){
+    padding: 2%;
+}
+
+#offers div:nth-of-type(1n) h5,
+#testimonials div:nth-of-type(1n) h5{
+    font-weight: bold;
+}
+
+#offers .card-body,
+#testimonials .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10%;
+}
