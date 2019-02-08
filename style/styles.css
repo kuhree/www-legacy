@@ -1,15 +1,19 @@
 * {
     font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1.5;
 }
 
 .vertical-center {
-    min-height: 90vh;
     align-items: center;
     display: flex;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+a {
+    color: red;
 }
 
 /*NavBar Styles ---------------------*/
@@ -34,14 +38,15 @@ nav .container {
 
 
 /*Jumbotron Styles ---------------------*/
-#header {
+#main-header {
+    min-height: 90vh;
     background-image:   linear-gradient(#ccc -10%, rgba(255, 67, 81, .3) 75%),
                         url(../img/banner.jpg);
     background-size: cover;
 }
 
 
-#header .container div:last-child {
+#main-header .container div:last-child {
     position: relative;
     bottom: -100px;
 }
@@ -77,4 +82,54 @@ nav .container {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 10%;
+}
+
+/*Footer Styles ------------*/
+
+
+
+
+/*Pricing Styles -----------
+----------------------------
+****************************/
+
+/*Services Styles ----------*/
+    .warning {
+        color: red;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries ------------*/
+
+@media only screen and (max-width: 991px) {
+    #offers .card,
+    #testimonials .card {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-item a {
+        font-size: 5vw;
+    }
 }
