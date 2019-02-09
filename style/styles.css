@@ -45,12 +45,6 @@ nav .container {
     background-size: cover;
 }
 
-
-#main-header .container div:last-child {
-    position: relative;
-    bottom: -100px;
-}
-
 /*Background ---------------------*/
 .bg{
     background-image: url("../img/background.png");
@@ -175,6 +169,15 @@ Bootstrap 4 breakpoints
     #testimonials .card {
         margin-top: 10%;
     }
+
+    #main-header p {
+        font-size: 3vw;
+    }
+
+    #main-header h1,
+    #main-header .together {
+        font-size: 10vw;
+    }
   }
 
   /* Medium devices (tablets, 768px and up) */
@@ -185,6 +188,15 @@ Bootstrap 4 breakpoints
 
     .nav-item a {
         font-size: 1.7vw;
+    }
+
+    #main-header p {
+        font-size: 3vw;
+    }
+
+    #main-header h1,
+    #main-header .together {
+        font-size: 10vw;
     }
 
   }
@@ -208,6 +220,46 @@ Bootstrap 4 breakpoints
         font-size: 48px;
     }
 
+    #main-header p {
+        font-size: 1.6vw;
+    }
+
+    #main-header h1,
+    #main-header .together {
+        font-size: 5vw;
+    }
+
   }
 
   /*
+
+  /*JS Styles ------------------*/
+
+
+  /*Typewriter Effect----------*/
+  .line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
