@@ -45,6 +45,11 @@ nav .container {
     background-size: cover;
 }
 
+#main-header h1,
+#main-header .together {
+    font-size: 10vw;
+}
+
 /*Background ---------------------*/
 .bg{
     background-image: url("../img/background.png");
@@ -181,6 +186,8 @@ Bootstrap 4 breakpoints
   }
 
   /* Medium devices (tablets, 768px and up) */
+  
+  
   @media (min-width: 768px) {  
     .packages .card-header {
         font-size: 30px;
