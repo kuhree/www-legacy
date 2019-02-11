@@ -41,7 +41,7 @@ nav .container {
 #main-header {
     min-height: 90vh;
     background-image:   linear-gradient(#ccc -10%, rgba(255, 67, 81, .3) 75%),
-                        url(../img/banner.jpg);
+                        url("/public/images/banner.jpg");
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@ nav .container {
 
 /*Background ---------------------*/
 .bg{
-    background-image: url("../img/background.png");
+    background-image: url("/public/images/background.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center; 
